@@ -9,7 +9,6 @@ app = Flask(__name__)
 
 @app.route("/", methods=['GET'])
 def hello():
-    # return default response
     name = request.args.get('name')
     if name == None:
         name = 'Lenny & Reid'
