@@ -11,5 +11,5 @@ app = Flask(__name__)
 def hello():
     name = request.args.get('name')
     if name == None:
-        name = 'Lenny & Reid'
+        name = 'Lenny & Reid * Ben'
     return Response("<html><body>Welcome to your training, {name}!</body></html>".format(name=name), status=200)
